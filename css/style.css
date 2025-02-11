@@ -1,0 +1,395 @@
+:root {
+  --dark-blue: #2058bb;
+  --light-grey: #262626;
+  --light-blue: #f6f7f9;
+  --light: #f9f9f9;
+  --dark-blue-tone: #1461c5;
+  --dark-blue-tone-2: #0024a3;
+}
+
+/* * {
+  font-family: "SF Pro display", sans-serif;
+} */
+
+body {
+  padding-top: 205px !important;
+  position: relative;
+}
+
+#body-wh {
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  left: 10px;
+}
+
+#abb-corner {
+  position: fixed;
+  z-index: 9999;
+  right: 10px;
+  bottom: 10px;
+}
+
+.text-dark--blue {
+  color: var(--dark-blue);
+}
+
+.bg-dark-blue-tone {
+  background-color: var(--dark-blue-tone);
+}
+
+.bg-dark-blue-tone-2 {
+  background-color: var(--dark-blue-tone-2);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-grey {
+  background-color: #d8dcdc !important;
+}
+
+.bg-light--blue {
+  background-color: var(--light-blue);
+}
+
+.bg-dark--blue {
+  background-color: var(--dark-blue) !important;
+}
+
+#lang {
+  border: none;
+  background-color: #f6f7f9;
+}
+
+.fa-magnifying-glass,
+.fa-phone {
+  padding: 0 5px;
+  font-size: 0.7rem;
+}
+
+#first-nav .nav-link,
+#sec-nav .nav-link {
+  padding: 0;
+  margin-left: 20px;
+}
+
+#contact,
+.nav-link {
+  color: #666;
+  font-size: 14px !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+/* Main Nav */
+
+#main-nav {
+  border-bottom: 1px solid rgb(241, 238, 238);
+}
+
+#main-nav .nav-link {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#career {
+  font-weight: 500;
+}
+
+#sec-nav .nav-link {
+  color: black;
+  font-size: 15px !important;
+}
+
+/* #sec-nav .nav-link:hover {
+  border-bottom: 2px solid #2058bb;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+  padding-bottom: 10px;
+} */
+
+#sec-nav .nav-link:hover #hover {
+  display: flex !important;
+  height: 100px !important;
+}
+
+#navbar-ferdi-ters {
+  display: none !important;
+}
+
+.last-nav {
+  position: relative;
+}
+
+/* .last-nav {
+  height: 71px;
+  transition: height 0.4s ease;
+}
+
+.last-nav.shrink {
+  height: 30px;
+} */
+
+.last-nav li:hover #hover-div {
+  opacity: 1;
+  transition: all 0.5s;
+  display: block;
+}
+
+#hover-div {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  opacity: 0;
+  display: none;
+  top: 70px;
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  left: 0;
+  height: 200px;
+  width: 100%;
+}
+
+/* Slider */
+
+.half-circle {
+  position: absolute;
+  top: 250px;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: rgba(197, 206, 222, 255);
+  box-shadow: 0 0 1px 0 rgba(105, 103, 103, 0.5);
+}
+
+.slider-img {
+  max-height: 500px;
+  max-width: 500px;
+}
+
+/* Sade kecidler */
+
+.cards-img {
+  max-height: 190px !important;
+  max-width: 100px !important;
+}
+
+.cards h4 {
+  font-size: 18px;
+}
+
+.cards p {
+  font-size: 15px;
+}
+
+.row > * {
+  padding: 0 !important;
+}
+
+/* Kredit */
+
+.kredit h5 {
+  font-size: 18px;
+}
+
+.kredit input {
+  border: 2px solid rgb(194, 190, 190);
+  background-color: var(--light);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.kredit p {
+  font-size: 15px;
+}
+
+#check-box {
+  transform: scale(1.5);
+  margin-top: 8px;
+}
+
+/* Kredit Kalkulyatoru */
+
+.calculator-container {
+  padding: 0 50px !important;
+}
+
+.kredit-kalk {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #099bff 11.8%, #dddddd 11.8%);
+  cursor: pointer;
+}
+
+.kredit-kalk::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 5px solid #ffffff;
+  border-radius: 9999px;
+  background: #099bff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.11);
+}
+
+.kredit-slider {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.kredit-kalk {
+  position: absolute;
+  bottom: 22px;
+}
+
+.kredit-slider > div:first-child {
+  border: 1px solid rgba(128, 128, 128, 0.503);
+  border-bottom: none;
+  padding: 10px 15px;
+}
+
+/* Valyuta Konvertoru */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 16px !important;
+}
+th {
+  padding: 16px !important;
+  padding-bottom: 24px !important;
+}
+/* Card */
+
+.scale {
+  transform: scale(1.15) !important;
+}
+
+.row-4 .col-lg-6 {
+  max-height: 229px;
+  overflow: hidden;
+}
+
+/* Footer */
+
+.footer-ul > li {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .digitransfer-p {
+    width: 50%;
+  }
+  .calculator-container {
+    padding: 0 10px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .digitransfer-p {
+    width: 100%;
+  }
+  .slider-img,
+  .half-circle {
+    width: 290px;
+    height: 290px;
+  }
+
+  #swiper-navbar .swiper-slide {
+    height: 600px !important;
+  }
+
+  .half-circle {
+    top: 150px;
+  }
+  .last-nav {
+    display: none !important;
+  }
+  .row {
+    margin: 0 1px !important;
+  }
+  .bg-transparency {
+    background-color: #ffffff16 !important;
+  }
+
+  .scale {
+    transform: initial !important;
+  }
+
+  .row-4 .col-lg-6 {
+    max-height: inherit;
+    overflow: inherit;
+  }
+
+  body {
+    padding-top: 135px !important;
+  }
+
+  .footer-ul {
+    display: none !important;
+  }
+
+  .col-lg-2 {
+    width: auto !important;
+  }
+
+  .footer-header::after {
+    content: " / ";
+  }
+
+  .footer-header {
+    opacity: 75%;
+  }
+
+  .footer-header-last::after {
+    content: "";
+  }
+
+  #bildiris-sekil {
+    border-radius: 15px;
+    margin-top: 40px !important;
+  }
+  #navbar-ferdi {
+    display: none;
+  }
+
+  #navbar-ferdi-ters {
+    display: flex !important;
+  }
+  #career {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  #career > div {
+    background-color: var(--dark-blue);
+    color: white !important;
+    text-align: center;
+    padding: 5px 10px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .col-lg-4 {
+    width: 31.3% !important;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 49% !important;
+  }
+}
