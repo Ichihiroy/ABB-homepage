@@ -137,7 +137,7 @@ body {
 .last-nav li:hover #hover-div {
   opacity: 1;
   transition: all 0.5s;
-  display: block;
+  display: flex!important;
 }
 
 #hover-div {
@@ -145,7 +145,7 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 50px;
   opacity: 0;
-  display: none;
+  display: none !important;
   top: 70px;
   border-top: 1px solid rgba(0, 0, 0, 0.075);
   border-bottom: 1px solid rgba(0, 0, 0, 0.075);
